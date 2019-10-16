@@ -1,4 +1,9 @@
-public class Car {
+package models;
+
+import behaviours.IBuy;
+import behaviours.IBuyable;
+
+public class Car implements IBuyable {
 
     private String make;
     private String model;
@@ -26,5 +31,9 @@ public class Car {
 
     public int getCustomerPrice() {
         return customerPrice;
+    }
+
+    public int getPrice(IBuy buyer) {
+
     }
 }

@@ -1,3 +1,4 @@
+import models.Customer;
 import org.junit.Before;
 import org.junit.Test;
 

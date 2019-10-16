@@ -1,6 +1,10 @@
+package models;
+
+import behaviours.IBuy;
+
 import java.util.ArrayList;
 
-public class Showroom {
+public class Showroom implements IBuy {
 
     private String name;
     private ArrayList<Car> selection;

@@ -1,3 +1,5 @@
+import models.Car;
+import models.Factory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -33,5 +35,12 @@ public class FactoryTest {
     public void testCarDetails(){
         factory.fabricateCar("Fiesta", 14000, 16000);
         assertEquals("Ford", factory.getStock().get(0).getMake());
+    }
+
+    @Test
+    public void canFindCarByModel(){
+        factory.fabricateCar("Fiesta", 14000, 16000);
+        Car foundCar = factory.getCarByModel("Fiesta");
+        assertEquals("Fiesta", foundCar.getModel());
     }
 }

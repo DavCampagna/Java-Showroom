@@ -1,3 +1,4 @@
+import models.Car;
 import org.junit.Before;
 import org.junit.Test;
 

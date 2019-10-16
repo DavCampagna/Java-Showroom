@@ -1,3 +1,4 @@
+import models.Showroom;
 import org.junit.Before;
 import org.junit.Test;
 
