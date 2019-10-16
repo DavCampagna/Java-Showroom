@@ -28,4 +28,10 @@ public class FactoryTest {
         factory.fabricateCar("Fiesta", 14000, 16000);
         assertEquals(1, factory.getStockCount());
     }
+
+    @Test
+    public void testCarDetails(){
+        factory.fabricateCar("Fiesta", 14000, 16000);
+        assertEquals("Ford", factory.getStock().get(0).getMake());
+    }
 }
